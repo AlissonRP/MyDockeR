@@ -7,7 +7,7 @@ yeah yeah, almost all the time I went to university I had to install the `tidyve
 ## How to build
 
 ```bash
-docker build -t my_r
+docker build -t my_r .
 ```
 
 
@@ -16,6 +16,3 @@ docker build -t my_r
 ```shell
 docker run --rm -p 8787:8787 my_r
 ```
-
-
-[Reference](https://jsta.github.io/r-docker-tutorial/) 
