@@ -4,15 +4,8 @@ yeah yeah, almost all the time I went to university I had to install the `tidyve
 
 
 
-## How to build
+# How to run 
 
-```bash
-docker build -t my_r .
-```
-
-
-## How to run 
-
-```shell
-docker run --rm -p 8787:8787 my_r
+```code 
+docker-compose up -d
 ```
