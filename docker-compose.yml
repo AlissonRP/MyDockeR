@@ -1,0 +1,22 @@
+version: '0.01'
+services:
+  rlang:
+    build: r/
+    ports:
+      - "8787:8787"
+    environment:
+      PASSWORD: password
+    volumes:
+      - ~/workspace:/home/rstudio/workspace
+    container_name: r_lang
+
+  jupyter:
+    build: jupyter/
+    ports: 
+      - "8888:8888"
+    environment:
+      - JUPYTER_TOKEN=token
+    volumes:
+      - /home/jovyan/work/data
+    container_name: jupyter
+
